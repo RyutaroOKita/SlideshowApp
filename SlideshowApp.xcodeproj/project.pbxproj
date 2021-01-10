@@ -13,6 +13,10 @@
 		5DC21F0425A2D5EE004BE51A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DC21F0225A2D5EE004BE51A /* Main.storyboard */; };
 		5DC21F0625A2D5EF004BE51A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DC21F0525A2D5EF004BE51A /* Assets.xcassets */; };
 		5DC21F0925A2D5EF004BE51A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DC21F0725A2D5EF004BE51A /* LaunchScreen.storyboard */; };
+		5DC21F1125A2D64D004BE51A /* photo-1518664196161-4bef8d483164.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5DC21F1025A2D64D004BE51A /* photo-1518664196161-4bef8d483164.jpeg */; };
+		5DC21F1425A2D75A004BE51A /* photo-1557487188-6b25fdf42260.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5DC21F1225A2D759004BE51A /* photo-1557487188-6b25fdf42260.jpeg */; };
+		5DC21F1525A2D75A004BE51A /* photo-1517524118623-cc0051fec2cc.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5DC21F1325A2D759004BE51A /* photo-1517524118623-cc0051fec2cc.jpeg */; };
+		5DC21F1725A5877D004BE51A /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC21F1625A5877D004BE51A /* SubViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		5DC21F0525A2D5EF004BE51A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DC21F0825A2D5EF004BE51A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5DC21F0A25A2D5EF004BE51A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DC21F1025A2D64D004BE51A /* photo-1518664196161-4bef8d483164.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "photo-1518664196161-4bef8d483164.jpeg"; sourceTree = "<group>"; };
+		5DC21F1225A2D759004BE51A /* photo-1557487188-6b25fdf42260.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "photo-1557487188-6b25fdf42260.jpeg"; sourceTree = "<group>"; };
+		5DC21F1325A2D759004BE51A /* photo-1517524118623-cc0051fec2cc.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "photo-1517524118623-cc0051fec2cc.jpeg"; sourceTree = "<group>"; };
+		5DC21F1625A5877D004BE51A /* SubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +67,13 @@
 				5DC21EFC25A2D5EE004BE51A /* AppDelegate.swift */,
 				5DC21EFE25A2D5EE004BE51A /* SceneDelegate.swift */,
 				5DC21F0025A2D5EE004BE51A /* ViewController.swift */,
+				5DC21F1625A5877D004BE51A /* SubViewController.swift */,
+				5DC21F1025A2D64D004BE51A /* photo-1518664196161-4bef8d483164.jpeg */,
 				5DC21F0225A2D5EE004BE51A /* Main.storyboard */,
 				5DC21F0525A2D5EF004BE51A /* Assets.xcassets */,
 				5DC21F0725A2D5EF004BE51A /* LaunchScreen.storyboard */,
+				5DC21F1225A2D759004BE51A /* photo-1557487188-6b25fdf42260.jpeg */,
+				5DC21F1325A2D759004BE51A /* photo-1517524118623-cc0051fec2cc.jpeg */,
 				5DC21F0A25A2D5EF004BE51A /* Info.plist */,
 			);
 			path = SlideshowApp;
@@ -126,8 +138,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DC21F0925A2D5EF004BE51A /* LaunchScreen.storyboard in Resources */,
+				5DC21F1425A2D75A004BE51A /* photo-1557487188-6b25fdf42260.jpeg in Resources */,
 				5DC21F0625A2D5EF004BE51A /* Assets.xcassets in Resources */,
+				5DC21F1525A2D75A004BE51A /* photo-1517524118623-cc0051fec2cc.jpeg in Resources */,
 				5DC21F0425A2D5EE004BE51A /* Main.storyboard in Resources */,
+				5DC21F1125A2D64D004BE51A /* photo-1518664196161-4bef8d483164.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DC21F1725A5877D004BE51A /* SubViewController.swift in Sources */,
 				5DC21F0125A2D5EE004BE51A /* ViewController.swift in Sources */,
 				5DC21EFD25A2D5EE004BE51A /* AppDelegate.swift in Sources */,
 				5DC21EFF25A2D5EE004BE51A /* SceneDelegate.swift in Sources */,
