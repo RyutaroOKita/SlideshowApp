@@ -99,25 +99,6 @@ class ViewController: UIViewController {
            displayImage()
        }
 
-
-//    var dispImageNo = 0
-//    var nowIndex:Int = 0
-//    
-//    var imageArray:[UIImage] = [
-//        UIImage(named: "photo-1518664196161-4bef8d483164.jpeg")!,
-//        UIImage(named: "photo-1557487188-6b25fdf42260.jpeg")!,
-//        UIImage(named: "photo-1517524118623-cc0051fec2cc.jpeg")!,
-//    ]
-    
-    
-
-        // スライドショーさせる画像の配列を宣言
-//        var imageArray:[UIImage] = [
-//            UIImage(named: "photo-1518664196161-4bef8d483164.jpeg")!,
-//            UIImage(named: "photo-1557487188-6b25fdf42260.jpeg")!,
-//            UIImage(named: "photo-1517524118623-cc0051fec2cc.jpeg")!,
-//        ]
-
     
     
        func displayImage(){
@@ -171,9 +152,19 @@ class ViewController: UIViewController {
 //    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             let secondViewController:SecondViewController = segue.destination as! SecondViewController
-            secondViewController.image=imageArray[nowIndex]
+            
         
-        timer.invalidate()
+        if (timer == nil) {
+                       
+            secondViewController.image=imageArray[nowIndex]
+
+                   } else {
+            timer.invalidate()
+            secondViewController.image=imageArray[nowIndex]
+                       
+                   }
+        
+        
         
         
     }
