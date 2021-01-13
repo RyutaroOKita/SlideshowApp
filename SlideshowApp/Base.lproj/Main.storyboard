@@ -64,12 +64,15 @@
                     <navigationItem key="navigationItem" id="jXi-qO-YKz"/>
                     <connections>
                         <outlet property="imageView" destination="eOh-Z8-bsD" id="Awd-3A-Gs2"/>
+                        <outlet property="onNexts" destination="dIE-lC-99A" id="LV7-Uy-YPV"/>
+                        <outlet property="onPrevs" destination="B95-pQ-CK9" id="yqi-gG-uar"/>
                         <outlet property="startButton" destination="pIT-u3-9C6" id="iVf-QA-VKQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="q7Q-sp-LE9">
                     <connections>
+                        <action selector="timerstop:" destination="BYZ-38-t0r" id="R8y-xv-CMC"/>
                         <segue destination="uZ9-Dj-Q8U" kind="show" identifier="toNext" id="NHL-cN-geH"/>
                     </connections>
                 </tapGestureRecognizer>

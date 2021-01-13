@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var onNexts: UIButton!
+    @IBOutlet weak var onPrevs: UIButton!
     
     
 
@@ -27,6 +29,8 @@ class ViewController: UIViewController {
             UIImage(named: "photo-1557487188-6b25fdf42260.jpeg")!,
             UIImage(named: "photo-1517524118623-cc0051fec2cc.jpeg")!,
         ]
+    
+   
 
 
        
@@ -41,6 +45,8 @@ class ViewController: UIViewController {
 
                 // ボタンの名前を停止に変える
                 startButton.setTitle("停止", for: .normal)
+                onNexts.isEnabled = false
+                onPrevs.isEnabled = false
 
             } else {
                 // 停止時の処理を実装
@@ -52,7 +58,13 @@ class ViewController: UIViewController {
 
                 // ボタンの名前を再生に直しておく
                 startButton.setTitle("再生", for: .normal)
+                
+                onNexts.isEnabled = true
+                onPrevs.isEnabled = true
             }
+            
+            
+            
         }
 
         @objc func changeImage() {
@@ -106,9 +118,9 @@ class ViewController: UIViewController {
 //            UIImage(named: "photo-1517524118623-cc0051fec2cc.jpeg")!,
 //        ]
 
+    
+    
        func displayImage(){
-        
-
         
 
            let imageNameArray = [
@@ -151,16 +163,29 @@ class ViewController: UIViewController {
            imageView.image = image
 
        }
+    
+   
+    
+       
+       
 //    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             let secondViewController:SecondViewController = segue.destination as! SecondViewController
             secondViewController.image=imageArray[nowIndex]
         
+        timer.invalidate()
+        
+        
     }
+        
+    
     
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
         // 他の画面から segue を使って戻ってきた時に呼ばれる
+        onNexts.isEnabled = true
+        onPrevs.isEnabled = true
     }
+    
     
     
     
